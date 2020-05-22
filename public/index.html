@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"
+        integrity="sha256-KDK3xm/GlUAv2dBVItuCM6jjCCtAVrjEfsdpcuMbN5M=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"
+        integrity="sha256-a6uP+lfJTznPH4/eUqQFX3/sULwjHbfGtUjy8CWPooI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>locate</title>
+</head>
+
+<body>
+    <div><a href="/">check in</a> | <a href="/checkins">view checkins</a></div>
+    <p><span id="latitude"></span>&deg;, <span id="longitude"></span>&deg;,</p>
+    <p>
+        The weather here is <span id="main"></span> with a temperature of
+        <span id="name"></span> degrees farenheit. The
+        concentration of particulate matter (<span id="aq_parameter"></span>)
+        is <span id="aq_value"></span> <span id="aq_units"></span> last read
+        on <span id="aq_date"></span>.
+    </p>
+    <button id="checkin">check in</button>
+
+    <script src="sketch.js"></script>
+
+    <p>
+        latitude: <span id="latitude"></span>&deg;<br />
+        longitude: <span id="longitude"></span>&deg;
+    </p>
+    <label for="mood"> enter your mood</label>
+    <button id="submit">submit</button>
+    <input id="mood" value="rainbow">
+
+</body>
+
+</html>
